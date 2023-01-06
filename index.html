@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glajcar - BS cviko - Houbova farma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption&family=PT+Serif:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#cookiesModal').modal('show');
+        });
+    </script>
+    <!-- Modal -->
+    <div class="modal fade" id="cookiesModal" tabindex="-1" aria-labelledby="cookieconsentLabel1" aria-hidden="true"
+        data-mdb-backdrop="static" data-mdb-keyboard="false">
+        <div class="modal-dialog modal-sm d-flex justify-content-center">
+            <div class="modal-content text-center">
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title text-primary" id="cookieconsentLabel1">Cookies & Soukromi</h5>
+                </div>
+                <div class="modal-body p-4">
+                    Tento web pouziva soubory cookies, aby vam zajistil co nejlepsi zazitek z nasich webovych
+                    stranek.
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-primary" href="#">Zjistit vice <i
+                            class="fa-solid fa-forward"></i></button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Potvrdit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="domu" href="domu" class="container-fluid">
+        <nav class="navbar navbar-expand-sm py-0 py-md-0 fixed-top bg-light">
+            <div class="container-fluid d-flex align-items-baseline">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-lg-0 mr-0">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#domu">
+                                <div data-bs-toggle="collapse" data-bs-target="#navbarText">Domu</div>
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#onas">
+                                <div data-bs-toggle="collapse" data-bs-target="#navbarText">O nas</div>
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#naseCinnost">
+                                <div data-bs-toggle="collapse" data-bs-target="#navbarText">Nase cinnost</div>
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#cenik">
+                                <div data-bs-toggle="collapse" data-bs-target="#navbarText">Cenik</div>
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#kontakt">
+                                <div data-bs-toggle="collapse" data-bs-target="#navbarText">Kontakt</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-12 col-lg-2">
+                <div class="container-sm position-absolute text-dark intro">
+                    <h2 class="introtext">Houbova farma</h2>
+                    <p class="introtext">
+                        Pestujeme houby jiz s 20 letou tradici!
+                    </p>
+                    <a type="button" class="btn btn-primary" href="#onas">O nas</a>
+                    <a type="button" class="btn btn-success" href="#naseCinnost">Zjistit vice</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="onas" class="container-fluid">
+        <div class="text-center p-3 pt-5">
+            <h2>O nas</h2>
+            <p>Specializujeme se na pěstování hub. Naše produkty jsou 100% pěstovány a vyráběny námi, v našem vlastním
+                zařízení v ČR.
+                Nabízíme mnoho druhů hub, stejně jako vzdělávání a prohlídky na místě, které vám ukáží, co je potřeba,
+                abyste mohli začít v tomto vzrušujícím odvětví!</p>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/carousel/mushroom-1.jpeg" class="d-block w-100" alt="houba1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="textshadowWhite">Hrib dubovy</h5>
+                                <p class="textshadowWhite">Řadí se k houbařsky nejvyhledávanějším druhům.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel/Mushroom-2.jpg" class="d-block w-100" alt="houba2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="textshadowBlack">Zampiony</h5>
+                                <p class="textshadowBlack">Nejvíce produkovanou houbou ze všech z hlediska
+                                    světové produkce.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel/mushroom-3.jpg" class="d-block w-100" alt="houba3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="textshadowBlack">Hliva ustricna</h5>
+                                <p class="textshadowBlack">Celosvětově je po žampionech a šiitake třetí nejdůležitější
+                                    pěstovanou houbou, ročně se jí vypěstuje kolem 2,5 milionu tun.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center">
+                <p class="muted">
+                    Houby nejsou rostliny a pro optimální růst vyžadují různé podmínky. Rostliny se vyvíjejí
+                    prostřednictvím <span class="onasTooltip" data-bs-toggle="tooltip"
+                        data-bs-title="fotosyntetická asimilace">fotosyntézy</span>, což je proces, který přeměňuje
+                    atmosférický oxid uhličitý na <span class="onasTooltip" data-bs-toggle="tooltip"
+                        data-bs-title="cukry">sacharidy</span>, zejména celulózu. Zatímco sluneční světlo poskytuje
+                    rostlinám zdroj energie, houby získávají veškerou energii a růstové materiály ze svého růstového
+                    média prostřednictvím biochemických <span class="onasTooltip" data-bs-toggle="tooltip"
+                        data-bs-title="dekompozice">rozkladných</span> procesů.
+                </p>
+            </div>
+            <div class="col-lg-2 col-0"></div>
+        </div>
+    </div>
+    <div id="naseCinnost" class="container-fluid justify-content-center">
+        <div class="text-center p-3 pt-5">
+            <h2>Nase cinnost</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-2 p-3 d-flex justify-content-center">
+            <div class="col ramecek m-2">
+                <div class="container p-1">
+                    <div class="mx-2 mt-4 mb-2 d-flex justify-content-center"><img
+                            src="images/nasecinnost/mushroom-farming.png" alt="mushroom"
+                            class="d-none d-md-block img-fluid ratio ratio-1x1">
+                    </div>
+                    <p class="mx-2 mt-4 mb-2 text-center">Pěstujeme houby nejen pro malé i velké odběratele.</p>
+                </div>
+            </div>
+            <div class="col ramecek m-2">
+                <div class="container p-1">
+                    <div class="mx-2 mt-4 mb-2 d-flex justify-content-center"><img
+                            src="images/nasecinnost/gina-sell-R2CiZMAmT14-unsplash.jpg" alt=""
+                            class="d-none d-md-block img-fluid"></div>
+                    <p class="mx-2 mt-4 mb-2 text-center">Vyrábíme spoustu vitamínů jako doplněk stravy.</p>
+                </div>
+            </div>
+            <div class="col ramecek m-2">
+                <div class="container p-1">
+                    <div class="mx-2 mt-4 mb-2 d-flex justify-content-center"><img
+                            src="images/nasecinnost/vitalii-riznyk-H72FU1wz3B8-unsplash.jpg" alt=""
+                            class="d-none d-md-block img-fluid ratio ratio-1x1"></div>
+                    <p class="mx-2 mt-4 mb-2 text-center">Jestli nemuzete najit hriby v lese, kupte si je u nas!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cenik">
+        <div class="text-center p-3 pt-5">
+            <h2>Cenik</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-3"></div>
+            <div class="col-lg-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Produkt</th>
+                            <th scope="col">Cena za kus</th>
+                            <th scope="col">Cena pri &gt;10 ks</th>
+                            <th scope="col">Cena pro pravidelne odberatele</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Zampiony</th>
+                            <td>25,-</td>
+                            <td>20,-</td>
+                            <td>15,-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hliva Ustricna</th>
+                            <td>25,-</td>
+                            <td>20,-</td>
+                            <td>15,-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hrib dubovy</th>
+                            <td>25,-</td>
+                            <td>20,-</td>
+                            <td>15,-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4 col-sm-3 c"></div>
+        </div>
+    </div>
+    <div id="kontakt">
+        <div class="text-center p-3 pt-5">
+            <h2>Kontakt</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 d-flex align-items-center">
+                <div class="container d-flex justify-content-center ">
+                    <div class="m-1 p-1 pb-5">
+                        <h5>Adresa: </h5>
+                        <i class="fa-solid fa-location-dot"></i> Slezska 7, Cesky Tesin <br><br>
+                        <h5>Email: </h5>
+                        <i class="fa-regular fa-envelope"></i> <a href="mailto:email@email.cz"
+                            class="text-reset text-decoration-none">email@email.cz</a>
+                        <br><br>
+                        <h5>Telefon:</h5>
+                        <i class="fa-solid fa-phone"></i> +420 666 999 420 <br><br>
+                        <h5>Socialni site:</h5>
+                        <i class="fa-brands fa-facebook"></i> <a href="#"
+                            class="text-reset text-decoration-none">Houbova farma</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 d-flex justify-content-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1822.9198324465297!2d18.609220278459183!3d49.74848636300612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471406ac32767705%3A0x8029637c9120b0c!2zU2xlenNrw6EgNDgzLzcsIDczNyAwMSDEjGVza8O9IFTEm8Whw61u!5e0!3m2!1scs!2scz!4v1673002735926!5m2!1scs!2scz"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="pt-3 nejede">
+            <!-- <img src="images/underconstruction.png" alt="" class=""> -->
+            <div class="text-center p-3 pt-5">
+                <h2>Poslete nam zpravu</h2>
+            </div>
+            <form method="POST" action="poslat-mail.php" class="needs-validation">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-2"></div>
+                    <div class="col-lg-2 col-sm-3">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Vase jmeno</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-3">
+                        <div class="form-floating mb-3">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Vas email</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-3">
+                        <div class="form-floating mb-3">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Predmet</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-2 col-sm-2"></div>
+                    <div class="col-lg-6 col-md-9 col-sm-9">
+                        <div class="form-floating mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Zprava</span>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-end p-1">
+                                <div class="d-flex align-items-center required">* pozadovano</div>
+                                <button type="submit" class="btn btn-light mb-3 m-3" href="" id="">
+                                    Odeslat
+                                </button>
+                            </div>
+                            <div id="liveAlertPlaceholder"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-2 col-sm-2"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="container-fluid bg-light p-2 d-flex justify-content-center align-items-center">&copy; Dalibor
+        Glajcar 2023</footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+
+</body>
+
+</html>
